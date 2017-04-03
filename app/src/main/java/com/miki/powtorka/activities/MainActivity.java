@@ -11,8 +11,11 @@ import com.miki.powtorka.R;
 import com.miki.powtorka.fragment.FragmentCircle;
 import com.miki.powtorka.fragment.FragmentRectangle;
 import com.miki.powtorka.fragment.FragmentTriangle;
+import com.miki.powtorka.fragment.BaseShapeFragment;
 
 public class MainActivity extends Activity {
+
+
 
     FragmentTransaction transaction;
 
@@ -49,6 +52,9 @@ public class MainActivity extends Activity {
             startActivityWithMenuPick(2);
         }
     }
+
+
+
 
     private void transactionForFragment(Fragment fragment ) {
         transaction = getFragmentManager().beginTransaction();
