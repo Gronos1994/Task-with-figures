@@ -38,7 +38,7 @@ public abstract class BaseShapeFragment extends Fragment {
 
     @Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        final View rootView = inflater.inflate(R.layout.shape_master, container, false);
+        final View rootView = inflater.inflate(R.layout.shape_calculation_fragment, container, false);
         LinearLayout linearLayout = (LinearLayout) rootView.findViewById(R.id.linearLayout);
 
 

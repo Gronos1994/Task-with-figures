@@ -3,6 +3,7 @@ package com.miki.powtorka.activities;
 import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.miki.powtorka.R;
 import com.miki.powtorka.fragment.FragmentCircle;
@@ -24,7 +25,7 @@ public class ViewFragmentActivity extends Activity {
             transaction.replace(R.id.frameFragment, new FragmentCircle());
         } else if (MenuPick == 1) {
             transaction.replace(R.id.frameFragment, new FragmentTriangle());
-        } else if (MenuPick == 2) {
+        } else {
             transaction.replace(R.id.frameFragment, new FragmentRectangle());
         }
 
