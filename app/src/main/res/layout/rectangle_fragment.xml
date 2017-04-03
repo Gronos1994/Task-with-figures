@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/rectange_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewRectangle"
+        android:layout_weight="0.06" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/rectangleAArea"
+        android:layout_weight="0.06"
+        android:hint="A" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/rectangleBArea"
+        android:layout_weight="0.06"
+        android:hint="B" />
+
+    <Button
+        android:text="@string/area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rectangleAreaButton"
+        android:layout_weight="0.06" />
+
+    <Button
+        android:text="@string/circuit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rectangleCircuitButton"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:text=" "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultRectangle"
+        android:layout_weight="0.06"
+        android:textSize="24sp" />
+
+</LinearLayout>
