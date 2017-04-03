@@ -10,7 +10,7 @@ import com.miki.powtorka.calculations.Calculations;
 public class FragmentCircle extends BaseShapeFragment {
 
     public FragmentCircle() {
-        super(1,R.drawable.circle_image);
+        super(1,R.drawable.circle_image, new String[]{"R"});
     }
 
     @Override

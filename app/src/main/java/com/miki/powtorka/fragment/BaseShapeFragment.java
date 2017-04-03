@@ -22,13 +22,18 @@ public abstract class BaseShapeFragment extends Fragment {
 
 
     private EditText[] editTexts;
+    private String[] editTextsLabels;
     int imageRes;
 
 
     protected BaseShapeFragment(int fields, int imageRes) {
         editTexts = new EditText[fields];
         this.imageRes = imageRes;
+    }
 
+    protected BaseShapeFragment(int fields, int imageRes, String[] editTextsLabels) {
+        this(fields, imageRes);
+        this.editTextsLabels = editTextsLabels;
     }
 
     @Override
@@ -43,12 +48,17 @@ public abstract class BaseShapeFragment extends Fragment {
         linearLayout.addView(imgView);
 
         final TextView resultField = new TextView(rootView.getContext());
+        resultField.setTextSize(24);
 
         for (int i = 0; i < editTexts.length; i++) {
             editTexts[i] = new EditText(rootView.getContext());
             editTexts[i].setInputType(InputType.TYPE_CLASS_NUMBER);
-            char c = (char) (i + 97);
-            editTexts[i].setHint(String.valueOf(c));
+            try {
+                editTexts[i].setHint(editTextsLabels[i]);
+            } catch (Exception e) {
+                char c = (char) (i + 97);
+                editTexts[i].setHint(String.valueOf(c));
+            }
             linearLayout.addView(editTexts[i]);
         }
 

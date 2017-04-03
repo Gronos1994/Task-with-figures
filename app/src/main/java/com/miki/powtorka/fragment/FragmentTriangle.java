@@ -10,7 +10,7 @@ import com.miki.powtorka.calculations.Calculations;
 public class FragmentTriangle extends BaseShapeFragment {
 
     public FragmentTriangle() {
-        super(2, R.drawable.triangle_image);
+        super(2, R.drawable.triangle_image,new String[]{"a","h"});
     }
 
     @Override
