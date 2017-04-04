@@ -15,11 +15,11 @@ public class FragmentTriangle extends BaseShapeFragment {
 
     @Override
     double getCircuit(Calculations calculations) {
-        return 0;
+        return calculations.triangleCircuit(valueOfField(0));
     }
 
     @Override
     double getArea(Calculations calculations) {
-        return 0;
+        return calculations.triangleArea(valueOfField(0),valueOfField(1));
     }
 }
